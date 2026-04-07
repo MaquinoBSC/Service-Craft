@@ -882,4 +882,9 @@
         <enabled>true</enabled>
         <name>WorkCalibrationUser</name>
     </userPermissions>
+    <applicationVisibilities>
+        <application>Service_Craft</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
 </Profile>
