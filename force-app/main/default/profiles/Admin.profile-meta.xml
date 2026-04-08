@@ -899,6 +899,6 @@
     <recordTypeVisibilities>
         <recordType>Case.Support</recordType>
         <visible>true</visible>
-        <default>false</default>
+        <default>true</default>
     </recordTypeVisibilities>
-</Profile>o
+</Profile>
