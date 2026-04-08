@@ -887,4 +887,18 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
-</Profile>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <viewAllRecords>false</viewAllRecords>
+        <object>Case</object>
+    </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>Case.Support</recordType>
+        <visible>true</visible>
+        <default>false</default>
+    </recordTypeVisibilities>
+</Profile>o
