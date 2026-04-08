@@ -16,3 +16,13 @@ The `sfdx-project.json` file contains useful configuration information for your 
 - [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
 - [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+
+
+Pasos Post
+- Configurar celebraciones para Path Assitant
+    - En `Setup`, buscar `Path Assitant` y editar el registro `Service Craft Path`
+    - Click en `Next`
+    - En el paso 2, asegurar tener seleccionado el estado `New`
+    - En el paso 3, habilitar las celebraciones, seleccionar el estado `Closed` y en frecuencia de celebración seleccionar `Always`
+    - Click en `Finalizar`
+
