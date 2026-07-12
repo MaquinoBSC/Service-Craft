@@ -9,6 +9,11 @@
         </value>
     </customProperties>
     <environments>Default</environments>
+    <formulas>
+        <name>SizeOfSubject</name>
+        <dataType>Boolean</dataType>
+        <expression>LEN({!Subject}) &gt; 20</expression>
+    </formulas>
     <interviewLabel>Create Task for COntact Owner {!$Flow.CurrentDateTime}</interviewLabel>
     <label>CU3 ScreenFlow Crate Task For Contact Owner</label>
     <processMetadataValues>
@@ -66,7 +71,6 @@
             </value>
         </inputAssignments>
         <object>Task</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <screens>
         <name>Accept_Task_Inputs</name>
@@ -94,6 +98,10 @@
                     <stringValue>12</stringValue>
                 </width>
             </styleProperties>
+            <validationRule>
+                <errorMessage>&lt;p&gt;You should enter a subject of 20 words&lt;/p&gt;</errorMessage>
+                <formulaExpression>LEN({!Subject}) &lt; 20</formulaExpression>
+            </validationRule>
         </fields>
         <fields>
             <name>Due_Date</name>
@@ -110,6 +118,10 @@
                     <stringValue>12</stringValue>
                 </width>
             </styleProperties>
+            <validationRule>
+                <errorMessage>&lt;p&gt;&lt;strong style=&quot;color: rgb(247, 0, 0);&quot;&gt;&lt;u&gt;You have entered de date in th epast&lt;/u&gt;&lt;/strong&gt;&lt;/p&gt;</errorMessage>
+                <formulaExpression>{!Due_Date} &gt; {!$Flow.CurrentDate}</formulaExpression>
+            </validationRule>
         </fields>
         <fields>
             <name>Description</name>
